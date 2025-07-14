@@ -423,7 +423,7 @@
             .pustakawan, .tantangan {
                 padding: 2rem;
             }
-            .indonesia-grid, .container .models-grid{
+            .indonesia-grid, .container.models-grid{
                 grid-template-columns: 1fr;
             }
             
