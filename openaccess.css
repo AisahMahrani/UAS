@@ -233,11 +233,6 @@
             font-size: 1.3rem;
         }
 
-        .example-item p {
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
         /* tantangan */
         .tantangan {
             background: #8b4513;
@@ -331,6 +326,11 @@
             margin-bottom: 1rem;
         }
 
+        .pustakawan-item p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
         /* Footer */
         footer {
             background: linear-gradient(135deg, #654321, #8b4513);
@@ -411,11 +411,7 @@
             nav ul li {
                 margin: 0.5rem 0;
             }
-
-            .flow-diagram {
-                flex-direction: column;
-            }
-
+                    
             .arrow {
                 transform: rotate(90deg);
             }
@@ -424,7 +420,29 @@
                 padding: 2rem;
             }
 
-            .process-flow, .examples, .key-points {
+            .pustakawan, .tantangan {
                 padding: 2rem;
+            }
+            .indonesia-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline::before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .timeline-content {
+                width: 100%;
+                margin-left: 60px !important;
+                margin-right: 0 !important;
+            }
+            
+            .timeline-year {
+                left: 30px;
             }
         }
